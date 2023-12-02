@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enhanced Authentication System</title>
+</head>
+<body>
+    <div class="container">
+        <div id="greeting">
+            <h1>Welcome to Our Platform!</h1>
+        </div>
+        <div id="buttonContainer">
+            <button id="registerToggle" onclick="toggleForm('registerForm')">Sign Up</button>
+            <button id="loginToggle" onclick="toggleForm('loginForm')">Log In</button>
+        </div>
+        <form id="registerForm" class="form">
+            <label for="newUsername">Create Username:</label>
+            <input type="text" id="newUsername" placeholder="Choose a username" required>
+            <label for="newPassword">Create Password:</label>
+            <input type="password" id="newPassword" placeholder="Choose a password" required>
+            <button type="button" onclick="register()">Sign Up</button>
+        </form>
+        <form id="loginForm" class="form">
+            <label for="existingUsername">Username:</label>
+            <input type="text" id="existingUsername" placeholder="Enter your username" required>
+            <label for="existingPassword">Password:</label>
+            <input type="password" id="existingPassword" placeholder="Enter your password" required>
+            <button type="button" onclick="login()">Log In</button>
+        </form>
+        <p id="message"></p>
+        <div class="additional-features">
+            <p>Explore new features and enjoy a seamless experience.</p>
+            <button id="forgotPassword" onclick="forgotPassword()">Forgot Password?</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
